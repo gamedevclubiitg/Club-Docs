@@ -42,7 +42,7 @@ Fast, scalable, distributed revision control system. Git is a free and open sour
     ```
     echo "# some text" >> README.md
     git init
-    git add README.md
+    git add .
     git commit -m "first commit"
     ```
 1. Rename "master" branch to "main".
