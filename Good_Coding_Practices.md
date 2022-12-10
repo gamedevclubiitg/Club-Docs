@@ -10,6 +10,9 @@
 * Primary goal of having coding conventions is to ensure consistency & clarity in codebase.
 * Good coding conventions can help convey Intent and Context clearly for any piece of code in its scope of execution.
 * Coding conventions can often be more of recommendations and guidelines than hard and strict rules. As such there can be exception to these conventions. Developer's better judgement should prevail in these situations with the primary goal of conveying intent clearly in codebase.
+* A good code is not only efficient but readable too. We would have to trade off between both. Coventions help us make code readable which is very important if we are working in team. 
+* In CP, we write code which should just run fast. In Project, we mayhave to check and debug same line of code, refractor multiple times which makes readability a important factor.
+* If convention is followed effectively, it will reduce need of comments to make code understandable.
 
 # C# Code Standards
 | Object Name | Notation  | Plural | Char Mask |
