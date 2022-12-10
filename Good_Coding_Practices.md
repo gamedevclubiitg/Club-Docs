@@ -116,13 +116,18 @@ namespace XYZ
 
 # Use Prefabs
 * Why? 
-    * We can make scene hierarchy modular. i.e., we can change any specific part of environment and we also don't need to commit scene. 
+    * We can make scene hierarchy modular. i.e., we can change any specific part of environment and we also don't need to commit complete scene. 
     * This will reduce merge conflicts on scene.
     * Prefabs can be easily exported and used in other games.
 * Always Use Prefabs as gameobjects and use scene as a container only.
 * Use Prefabs to combine and make higher level prefab in hierarchy. i.e., Nest Prefabs.
 * Read [this documentation](https://docs.unity3d.com/Manual/Prefabs.html) to get detailed idea of different stages of Prefabs. i.e., Overrides, Variants, etc.
-* 
+* Always do serialization inside prefabs. Never do it in scene.
+* Now, you will face a problem that how to serialize objects which are not part of prefab but will be part of scene. For example, Score calculating script wants to show GameOver Panel on win/lose. Earlier we could have serialized GameOver panel to score script. (Which is completely wrong and should not be done even if we were not using prefabs as score calculating script should not have direct reference to UI elements beacuse these type of referencing makes code hard to debug. Score script should have reference to any UI manager which is handling all UI related stuffs.). Now lets make situation clear that we want to link two scripts/object together and both are just instantiated and one have no idea of where other is (slightly dramatic). This can be solved in several ways:
+    * Find() : find the object you want by Find or FindWithTag functions and you will get your object which you want to reference. Although this will work, it should not be used as it iterates for each object in scene and is computationally expensive. Warning! never use in update loop.
+    * Singleton : Read [this](https://www.dofactory.com/net/singleton-design-pattern) to know about singleton pattern. A singleton instance can be accessed using its static variable referencing to itself. When both the objects are instantiated, they can reference themselves to this singleton instance. Now this reference can be used wherever we want. This also has drawback that it makes code harder to debug.
+    * There are more efficient ways which we will discuss in future.
 
-
-# Use Scriptable Objects
+<!-- 
+# Use Scriptable Objects 
+-->
