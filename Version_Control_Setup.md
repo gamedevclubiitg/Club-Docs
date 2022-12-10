@@ -75,7 +75,7 @@ Fast, scalable, distributed revision control system. Git is a free and open sour
     ssh-add ~/.ssh/id_rsa
     tail ~/.ssh/id_rsa.pub
     ```
-1. After running last command, you will get SSH key. Copy it.
+1. After running last command, you will get an SSH key. Copy it.
 1. In Setting of your repository on github, Open "GPG and SSH keys".
 1. Select "Add SSH key".
 1. Paste SSH key you had copied and give a name in the title section.
@@ -266,7 +266,7 @@ Fast, scalable, distributed revision control system. Git is a free and open sour
     ```
     git add .
     ```
-1. Also, you can Stage any file as following.
+1. Stage any file as following.
     ```
     git add file_name
     ```
@@ -303,6 +303,6 @@ Fast, scalable, distributed revision control system. Git is a free and open sour
     ```
     git lfs install
     ```
-1. Open the project in unity hub. (I will not be already there. You will have to click Open button in top right of unity hub and then browse to the project folder you just downloaded.)
+1. Open the project in unity hub. (It will not be already there. You will have to click Open button in top right of unity hub and then browse to the project folder you just downloaded.)
 <br>
 
