@@ -1,3 +1,11 @@
+# Content
+* [Overview](#overview)
+* [C# Code Standards](#c-code-standards)
+* [Rule for Nomenclature of Variables and Methods](#rules-for-naming-variables-properties-and-function)
+* [Standard Script Pattern](#standard-script-pattern)
+* [Use of Prefabs](#use-prefabs)
+
+
 # Overview
 * Primary goal of having coding conventions is to ensure consistency & clarity in codebase.
 * Good coding conventions can help convey Intent and Context clearly for any piece of code in its scope of execution.
@@ -105,3 +113,16 @@ namespace XYZ
     }
 }
 ```
+
+# Use Prefabs
+* Why? 
+    * We can make scene hierarchy modular. i.e., we can change any specific part of environment and we also don't need to commit scene. 
+    * This will reduce merge conflicts on scene.
+    * Prefabs can be easily exported and used in other games.
+* Always Use Prefabs as gameobjects and use scene as a container only.
+* Use Prefabs to combine and make higher level prefab in hierarchy. i.e., Nest Prefabs.
+* Read [this documentation](https://docs.unity3d.com/Manual/Prefabs.html) to get detailed idea of different stages of Prefabs. i.e., Overrides, Variants, etc.
+* 
+
+
+# Use Scriptable Objects

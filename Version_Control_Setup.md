@@ -1,3 +1,15 @@
+# Content
+* [Overview](#overview)
+* [Plastic SCM](#plastic-scm)
+    * [Setup](#setup)
+    * [Create Workspace](#create-workspace)
+    * [Join Workspace](#join-workspace)
+* [Git](#git)
+    * [Setup](#setup-1)
+    * [Add SSH Key](#ssh-key-authentication)
+    * [Create Workspace](#create-workspace)
+    * [Join Workspace](#join-workspace)
+
 # Overview
 * Primary goal of using version control is to keep versions of project. example, you don't have to give names car1, car2, carfinal for different version of same file.
 * Also it is used to collaborate multiple members on same project. One can synchronize its work, or work separately and merge with other work.
@@ -29,7 +41,7 @@ Fast, scalable, distributed revision control system. Git is a free and open sour
 
 ## Setup
 1. Install Git.
-1. You can use Terminal / Github Desktop / Sourcetree for further process. 
+1. You can use Terminal / Github Desktop / Sourcetree/ VSCode Git GUI for further process. 
 1. Using Terminal (Git bash in Windows) here.
 1. Configure your name and email on git which will dispalyed in your commits.
     ```
@@ -38,7 +50,7 @@ Fast, scalable, distributed revision control system. Git is a free and open sour
     ```
 1. Mergetool : Git may be able to automatically merge some changes made by different developers to .scene and .prefab files. But don't despair if you're still seeing merge conflicts: Unity ships with a Git-compatible merge tool named SmartMerge. 
 
-    To enable SmartMerge, you'll need to add the following snippet to your Git config. For just one repository, add it to the .git/config file in the top-level directory of your repository. To enable SmartMerge for all repositories on your system, you'll need to add it to your global Git configuration. Locations vary, it's usually ~/.gitconfig on MacOS and Linux, but you can simply run git config --global -e to open it in your system editor.  
+    To enable SmartMerge, you'll need to add the following snippet to your Git config. For just one repository, add it to the .git/config file in the top-level directory of your repository. To enable SmartMerge for all repositories on your system, you'll need to add it to your global Git configuration. Locations vary, it's usually ~/.gitconfig on MacOS and Linux, but you can simply run git config --global -e to open it in your system editor. [[Reference](https://www.gamedeveloper.com/programming/the-complete-guide-to-unity-git)]
     
     * Windows : 
         ```
