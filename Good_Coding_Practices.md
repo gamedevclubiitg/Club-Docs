@@ -30,7 +30,7 @@
 
 
 # Rules for naming Variables, Properties and Function
-* ### Prefer use of full words for variables names unless running into very long names. Names should carry intent of use. e.g.,
+* ### Prefer use of full words for variables names unless running into very long names. Names should carry intent of use. Variable and method names should be enough to tell the role of that variable or method. We need not need to go inside the method to read about it. e.g.,
     #### Use this
     ```csharp
     Vector3 playerPosition;
